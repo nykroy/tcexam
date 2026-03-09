@@ -461,7 +461,7 @@ class XMLQuestionImporter
 			\'' . $this->level_data['question']['question_difficulty'] . '\',
 			\'' . $this->boolval[$this->level_data['question']['question_enabled']] . '\',
 			' . F_zero_to_null((int) $this->level_data['question']['question_position']) . ',
-			\'' . $this->level_data['question']['question_timer'] . '\',
+			\'' . (int) $this->level_data['question']['question_timer'] . '\',
 			\'' . $this->boolval[$this->level_data['question']['question_fullscreen']] . '\',
 			\'' . $this->boolval[$this->level_data['question']['question_inline_answers']] . '\',
 			\'' . $this->boolval[$this->level_data['question']['question_auto_next']] . '\'
